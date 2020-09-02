@@ -55,4 +55,7 @@
   <project path="kernel/google/wahoo" name="android_kernel_google_wahoo" groups="device,wahoo,taimen,muskie" remote="bootlessxfly" clone-depth="100" />
   <project path="device/google/taimen" name="android_device_google_taimen" groups="device,wahoo,taimen" remote="bootlessxfly" clone-depth="100" />
   <project path="device/google/wahoo" name="android_device_google_wahoo" groups="device,wahoo,taimen,muskie" remote="bootlessxfly" />
+  <project path="device/google/crosshatch" name="android_device_google_crosshatch" groups="device,wahoo,taimen" remote="bootlessxfly" clone-depth="100" />
+  <project path="kernel/google/crosshatch" name="android_kernel_google_crosshatch" groups="device,wahoo,taimen,muskie" remote="bootlessxfly" />
+
 </manifest>
