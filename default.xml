@@ -9,6 +9,10 @@
            fetch="https://github.com/maruos"
            revision="maru-0.6" />
 
+  <remote  name="bootlessxfly"
+	         fetch="https://github.com/bootlessxfly"
+  />
+
   <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -48,5 +52,7 @@
   <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="maruos" />
   <project path="kernel/google/marlin" name="android_kernel_google_marlin" groups="device,marlin,sailfish" remote="maruos" clone-depth="100" />
   <project path="device/google/marlin" name="android_device_google_marlin" groups="device,marlin,sailfish,pdk" remote="maruos" />
-
+  <project path="kernel/google/wahoo" name="android_kernel_google_wahoo" groups="device,wahoo,taimen,muskie" remote="bootlessxfly" clone-depth="100" />
+  <project path="device/google/taimen" name="android_device_google_taimen" groups="device,wahoo,taimen" remote="bootlessxfly" clone-depth="100" />
+  <project path="device/google/wahoo" name="android_device_google_wahoo" groups="device,wahoo,taimen,muskie" remote="bootlessxfly" />
 </manifest>
