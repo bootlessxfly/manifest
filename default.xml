@@ -5,6 +5,10 @@
   <include name="lineage/default.xml" />
   <include name="snippets/overrides.xml" />
 
+  <remote  name="bootlessxfly"
+	         fetch="https://github.com/bootlessxfly"
+  />
+
   <remote  name="maruos"
            fetch="https://github.com/maruos"
            revision="maru-0.6" />
